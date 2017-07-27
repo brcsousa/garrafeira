@@ -151,9 +151,12 @@ figure, img, svg {
 /* @group topnav
 ================================================================================= */
 #topnav {
+	z-index: 20;
 	width: 100%;
 	padding: 0 5%;
+	position: fixed;
 	font-weight: bold;
+	top:0; right:0; left:0;
 	background-color: #D95B43;
 	border-bottom: 2px solid rgba(0,0,0,0.125);
 }
@@ -178,10 +181,7 @@ ul.menu li a {
 }
 
 #topnav.headroom {
-	z-index: 20;
-	position: fixed;
 	will-change: background;
-	top: 0; right: 0; left: 0;
 	transition: all 0.25s ease-in-out;
 }
 
@@ -214,7 +214,7 @@ ul.menu li a {
 	background-color: rgba(0,0,0,0.25);
 }
 
-@media (max-width: 1200px) { #heading h1 { font-size: 5em; } }
+@media (min-width: 1200px) { #heading h1 { font-size: 5em; } }
 
 /* @group middle
 ================================================================================= */
